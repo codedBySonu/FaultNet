@@ -1,0 +1,510 @@
+RecursiveScriptModule(
+  original_name=FaultNet
+  (conv1): RecursiveScriptModule(
+    original_name=Sequential
+    (0): RecursiveScriptModule(original_name=Conv3d)
+    (1): RecursiveScriptModule(original_name=BatchNorm3d)
+    (2): RecursiveScriptModule(original_name=ReLU6)
+  )
+  (conv1_0): RecursiveScriptModule(
+    original_name=BasicBlock
+    (conv1): RecursiveScriptModule(original_name=Conv3d)
+    (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+    (relu): RecursiveScriptModule(original_name=ReLU6)
+    (conv2): RecursiveScriptModule(original_name=Conv3d)
+    (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+  )
+  (conv1_1): RecursiveScriptModule(original_name=Conv3d)
+  (bn1_1): RecursiveScriptModule(original_name=BatchNorm3d)
+  (relu): RecursiveScriptModule(original_name=ReLU6)
+  (layer1): RecursiveScriptModule(
+    original_name=Sequential
+    (0): RecursiveScriptModule(
+      original_name=Bottleneck
+      (conv1): RecursiveScriptModule(original_name=Conv3d)
+      (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+      (conv2): RecursiveScriptModule(original_name=Conv3d)
+      (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+      (conv3): RecursiveScriptModule(original_name=Conv3d)
+      (bn3): RecursiveScriptModule(original_name=BatchNorm3d)
+      (relu): RecursiveScriptModule(original_name=ReLU6)
+      (downsample): RecursiveScriptModule(
+        original_name=Sequential
+        (0): RecursiveScriptModule(original_name=Conv3d)
+        (1): RecursiveScriptModule(original_name=BatchNorm3d)
+      )
+    )
+  )
+  (transition1): RecursiveScriptModule(
+    original_name=ModuleList
+    (0): RecursiveScriptModule(
+      original_name=Sequential
+      (0): RecursiveScriptModule(original_name=Conv3d)
+      (1): RecursiveScriptModule(original_name=BatchNorm3d)
+      (2): RecursiveScriptModule(original_name=ReLU6)
+    )
+    (1): RecursiveScriptModule(
+      original_name=Sequential
+      (0): RecursiveScriptModule(
+        original_name=Sequential
+        (0): RecursiveScriptModule(original_name=Conv3d)
+        (1): RecursiveScriptModule(original_name=BatchNorm3d)
+        (2): RecursiveScriptModule(original_name=ReLU6)
+      )
+    )
+  )
+  (stage2): RecursiveScriptModule(
+    original_name=Sequential
+    (0): RecursiveScriptModule(
+      original_name=HighResolutionModule
+      (branches): RecursiveScriptModule(
+        original_name=ModuleList
+        (0): RecursiveScriptModule(
+          original_name=Sequential
+          (0): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (1): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (1): RecursiveScriptModule(
+          original_name=Sequential
+          (0): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (1): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+      )
+      (fuse_layers): RecursiveScriptModule(
+        original_name=ModuleList
+        (0): RecursiveScriptModule(
+          original_name=ModuleList
+          (1): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(original_name=Conv3d)
+            (1): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (1): RecursiveScriptModule(
+          original_name=ModuleList
+          (0): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(
+              original_name=Sequential
+              (0): RecursiveScriptModule(original_name=Conv3d)
+              (1): RecursiveScriptModule(original_name=BatchNorm3d)
+            )
+          )
+        )
+      )
+      (relu): RecursiveScriptModule(original_name=ReLU6)
+    )
+    (1): RecursiveScriptModule(
+      original_name=HighResolutionModule
+      (branches): RecursiveScriptModule(
+        original_name=ModuleList
+        (0): RecursiveScriptModule(
+          original_name=Sequential
+          (0): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (1): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (1): RecursiveScriptModule(
+          original_name=Sequential
+          (0): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (1): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+      )
+      (fuse_layers): RecursiveScriptModule(
+        original_name=ModuleList
+        (0): RecursiveScriptModule(
+          original_name=ModuleList
+          (1): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(original_name=Conv3d)
+            (1): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (1): RecursiveScriptModule(
+          original_name=ModuleList
+          (0): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(
+              original_name=Sequential
+              (0): RecursiveScriptModule(original_name=Conv3d)
+              (1): RecursiveScriptModule(original_name=BatchNorm3d)
+            )
+          )
+        )
+      )
+      (relu): RecursiveScriptModule(original_name=ReLU6)
+    )
+  )
+  (transition2): RecursiveScriptModule(
+    original_name=ModuleList
+    (2): RecursiveScriptModule(
+      original_name=Sequential
+      (0): RecursiveScriptModule(
+        original_name=Sequential
+        (0): RecursiveScriptModule(original_name=Conv3d)
+        (1): RecursiveScriptModule(original_name=BatchNorm3d)
+        (2): RecursiveScriptModule(original_name=ReLU6)
+      )
+    )
+  )
+  (stage3): RecursiveScriptModule(
+    original_name=Sequential
+    (0): RecursiveScriptModule(
+      original_name=HighResolutionModule
+      (branches): RecursiveScriptModule(
+        original_name=ModuleList
+        (0): RecursiveScriptModule(
+          original_name=Sequential
+          (0): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (1): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (1): RecursiveScriptModule(
+          original_name=Sequential
+          (0): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (1): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (2): RecursiveScriptModule(
+          original_name=Sequential
+          (0): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (1): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+      )
+      (fuse_layers): RecursiveScriptModule(
+        original_name=ModuleList
+        (0): RecursiveScriptModule(
+          original_name=ModuleList
+          (1): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(original_name=Conv3d)
+            (1): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (2): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(original_name=Conv3d)
+            (1): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (1): RecursiveScriptModule(
+          original_name=ModuleList
+          (0): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(
+              original_name=Sequential
+              (0): RecursiveScriptModule(original_name=Conv3d)
+              (1): RecursiveScriptModule(original_name=BatchNorm3d)
+            )
+          )
+          (2): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(original_name=Conv3d)
+            (1): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (2): RecursiveScriptModule(
+          original_name=ModuleList
+          (0): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(
+              original_name=Sequential
+              (0): RecursiveScriptModule(original_name=Conv3d)
+              (1): RecursiveScriptModule(original_name=BatchNorm3d)
+              (2): RecursiveScriptModule(original_name=ReLU6)
+            )
+            (1): RecursiveScriptModule(
+              original_name=Sequential
+              (0): RecursiveScriptModule(original_name=Conv3d)
+              (1): RecursiveScriptModule(original_name=BatchNorm3d)
+            )
+          )
+          (1): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(
+              original_name=Sequential
+              (0): RecursiveScriptModule(original_name=Conv3d)
+              (1): RecursiveScriptModule(original_name=BatchNorm3d)
+            )
+          )
+        )
+      )
+      (relu): RecursiveScriptModule(original_name=ReLU6)
+    )
+    (1): RecursiveScriptModule(
+      original_name=HighResolutionModule
+      (branches): RecursiveScriptModule(
+        original_name=ModuleList
+        (0): RecursiveScriptModule(
+          original_name=Sequential
+          (0): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (1): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (1): RecursiveScriptModule(
+          original_name=Sequential
+          (0): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (1): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (2): RecursiveScriptModule(
+          original_name=Sequential
+          (0): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (1): RecursiveScriptModule(
+            original_name=BasicBlock
+            (conv1): RecursiveScriptModule(original_name=Conv3d)
+            (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+            (relu): RecursiveScriptModule(original_name=ReLU6)
+            (conv2): RecursiveScriptModule(original_name=Conv3d)
+            (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+      )
+      (fuse_layers): RecursiveScriptModule(
+        original_name=ModuleList
+        (0): RecursiveScriptModule(
+          original_name=ModuleList
+          (1): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(original_name=Conv3d)
+            (1): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+          (2): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(original_name=Conv3d)
+            (1): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (1): RecursiveScriptModule(
+          original_name=ModuleList
+          (0): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(
+              original_name=Sequential
+              (0): RecursiveScriptModule(original_name=Conv3d)
+              (1): RecursiveScriptModule(original_name=BatchNorm3d)
+            )
+          )
+          (2): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(original_name=Conv3d)
+            (1): RecursiveScriptModule(original_name=BatchNorm3d)
+          )
+        )
+        (2): RecursiveScriptModule(
+          original_name=ModuleList
+          (0): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(
+              original_name=Sequential
+              (0): RecursiveScriptModule(original_name=Conv3d)
+              (1): RecursiveScriptModule(original_name=BatchNorm3d)
+              (2): RecursiveScriptModule(original_name=ReLU6)
+            )
+            (1): RecursiveScriptModule(
+              original_name=Sequential
+              (0): RecursiveScriptModule(original_name=Conv3d)
+              (1): RecursiveScriptModule(original_name=BatchNorm3d)
+            )
+          )
+          (1): RecursiveScriptModule(
+            original_name=Sequential
+            (0): RecursiveScriptModule(
+              original_name=Sequential
+              (0): RecursiveScriptModule(original_name=Conv3d)
+              (1): RecursiveScriptModule(original_name=BatchNorm3d)
+            )
+          )
+        )
+      )
+      (relu): RecursiveScriptModule(original_name=ReLU6)
+    )
+  )
+  (fuse1): RecursiveScriptModule(original_name=Conv3d)
+  (fuse2): RecursiveScriptModule(original_name=Conv3d)
+  (fuse3): RecursiveScriptModule(original_name=Conv3d)
+  (fuse_layer1): RecursiveScriptModule(
+    original_name=MCF_Block
+    (expansion_conv): RecursiveScriptModule(original_name=Conv3d)
+    (skip_conv): RecursiveScriptModule(original_name=Conv3d)
+    (zoom_conv): RecursiveScriptModule(original_name=Conv3d)
+    (bn): RecursiveScriptModule(original_name=BatchNorm3d)
+    (norm_conv): RecursiveScriptModule(original_name=Conv3d)
+    (segse_block): RecursiveScriptModule(
+      original_name=SegSEBlock
+      (dila_conv): RecursiveScriptModule(original_name=Conv3d)
+      (conv1): RecursiveScriptModule(original_name=Conv3d)
+    )
+  )
+  (fuse_layer2): RecursiveScriptModule(
+    original_name=MCF_Block
+    (expansion_conv): RecursiveScriptModule(original_name=Conv3d)
+    (skip_conv): RecursiveScriptModule(original_name=Conv3d)
+    (zoom_conv): RecursiveScriptModule(original_name=Conv3d)
+    (bn): RecursiveScriptModule(original_name=BatchNorm3d)
+    (norm_conv): RecursiveScriptModule(original_name=Conv3d)
+    (segse_block): RecursiveScriptModule(
+      original_name=SegSEBlock
+      (dila_conv): RecursiveScriptModule(original_name=Conv3d)
+      (conv1): RecursiveScriptModule(original_name=Conv3d)
+    )
+  )
+  (layer2): RecursiveScriptModule(
+    original_name=Sequential
+    (0): RecursiveScriptModule(
+      original_name=BasicBlock
+      (conv1): RecursiveScriptModule(original_name=Conv3d)
+      (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+      (relu): RecursiveScriptModule(original_name=ReLU6)
+      (conv2): RecursiveScriptModule(original_name=Conv3d)
+      (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+    )
+    (1): RecursiveScriptModule(
+      original_name=BasicBlock
+      (conv1): RecursiveScriptModule(original_name=Conv3d)
+      (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+      (relu): RecursiveScriptModule(original_name=ReLU6)
+      (conv2): RecursiveScriptModule(original_name=Conv3d)
+      (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+    )
+  )
+  (last_layer): RecursiveScriptModule(
+    original_name=Sequential
+    (0): RecursiveScriptModule(
+      original_name=BasicBlock
+      (conv1): RecursiveScriptModule(original_name=Conv3d)
+      (bn1): RecursiveScriptModule(original_name=BatchNorm3d)
+      (relu): RecursiveScriptModule(original_name=ReLU6)
+      (conv2): RecursiveScriptModule(original_name=Conv3d)
+      (bn2): RecursiveScriptModule(original_name=BatchNorm3d)
+    )
+    (1): RecursiveScriptModule(original_name=Conv3d)
+  )
+)
